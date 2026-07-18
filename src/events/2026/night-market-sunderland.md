@@ -1,8 +1,8 @@
 ---
 title: Night Market UK
 date: 2026-04-15
-venue: Stack
-location: Sunderland
+venue: STACK
+location: Seaburn
 type: Day Out
 image: /images/events/xx.webp
 ---
