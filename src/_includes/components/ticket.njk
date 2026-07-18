@@ -1,0 +1,27 @@
+<article class="ticket">
+  {% if event.data.image %}
+    <div class="ticket__image">
+      <img src="{{ event.data.image }}" alt="">
+    </div>
+  {% endif %}
+
+  <div class="ticket__content">
+    <p class="ticket__category">{{ event.data.category }}</p>
+
+    <h3 class="ticket__title">
+      <a href="{{ event.url }}">
+        {{ event.data.title }}
+      </a>
+    </h3>
+
+    <p class="ticket__date">
+      <time datetime="{{ event.date | dateToISO }}">
+        {{ event.date | readableDate }}
+      </time>
+    </p>
+
+    {% if event.data.location %}
+      <p class="ticket__location">{{ event.data.location }}</p>
+    {% endif %}
+  </div>
+</article>

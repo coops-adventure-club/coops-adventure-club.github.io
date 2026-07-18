@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Your memories
+---
+
+<header class="page-header">
+  <h1>Your ticket stubs</h1>
+  <p>
+    Concerts, shows, trips and little adventures worth remembering.
+  </p>
+</header>
+
+{# <div class="ticket-list">
+  {% for event in collections.eventsByDate %}
+    {% include "components/ticket2.njk" %}
+  {% endfor %}
+</div> #}
+
+
+{% for group in collections.eventsByDate %}
+
+  <h2>{{ group.year }}</h2>
+
+  {% for event in group.events %}
+    {% include "components/ticket2.njk" %}
+  {% endfor %}
+
+{% endfor %}

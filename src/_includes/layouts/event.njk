@@ -1,0 +1,44 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="event">
+  <p>
+    <a href="/">← Back to all events</a>
+  </p>
+
+  <header>
+    <p class="event__category">{{ category }}</p>
+    <h1>{{ title }}</h1>
+
+    <dl class="event__details">
+      <div>
+        <dt>Date</dt>
+        <dd>
+          <time datetime="{{ date | dateToISO }}">
+            {{ date | readableDate }}
+          </time>
+        </dd>
+      </div>
+
+      {% if location %}
+        <div>
+          <dt>Location</dt>
+          <dd>{{ location }}</dd>
+        </div>
+      {% endif %}
+    </dl>
+  </header>
+
+  {% if image %}
+    <img
+      src="{{ image }}"
+      alt=""
+      class="event__image"
+    >
+  {% endif %}
+
+  <div class="event__notes">
+    {{ content | safe }}
+  </div>
+</article>

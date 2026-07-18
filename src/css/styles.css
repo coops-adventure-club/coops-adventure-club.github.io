@@ -1,0 +1,292 @@
+:root {
+  --page-background: #eeeeee;
+  --ticket-background: #ffffff;
+  --text-colour: #24211d;
+  --muted-text-colour: #888888;
+  --border-colour: #cccccc;
+  --shadow-colour: #888888;
+
+  --content-width: 55rem;
+  --page-gutter: 1rem;
+  --ticket-height: 150px;
+  --ticket-radius: 4px;
+  --ticket-inner-radius: 10px;
+}
+
+/* ==================================================
+   Base
+================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page-background);
+  color: var(--text-colour);
+  font-family: "Josefin Sans", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ==================================================
+   Page layout
+================================================== */
+
+.site-header,
+main {
+  width: min(
+    calc(100% - (var(--page-gutter) * 2)),
+    var(--content-width)
+  );
+  margin-inline: auto;
+}
+
+.site-header {
+  padding-block: 2rem;
+}
+
+.site-header > a {
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.site-header p {
+  margin-block: 0.25rem 0;
+}
+
+main {
+  padding-block-end: 4rem;
+}
+
+/* ==================================================
+   Ticket list
+================================================== */
+
+.ticket-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.ticket {
+  position: relative;
+  width: 100%;
+}
+
+/* ==================================================
+   Ticket component
+================================================== */
+
+.event {
+  width: 100%;
+  height: var(--ticket-height);
+  margin: 2.5rem auto 0;
+}
+
+/* Left-hand ticket stub */
+
+.event-side {
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: calc(15% - 1px);
+  height: 100%;
+  padding: 10px;
+  overflow: hidden;
+  background: var(--ticket-background);
+  border-radius:
+    var(--ticket-radius)
+    var(--ticket-inner-radius)
+    var(--ticket-inner-radius)
+    var(--ticket-radius);
+  box-shadow: 1px 2px 2px -1px var(--shadow-colour);
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* Decorative cut-out */
+
+.cut-out {
+  position: absolute;
+  top: 25%;
+  left: -60%;
+  display: block;
+  width: 100%;
+  height: 40%;
+  background: var(--page-background);
+  border-radius: 1000px;
+  box-shadow: inset -1px 2px 2px -1px var(--shadow-colour);
+}
+
+/* Perforated separator */
+
+.dotted-line-separator {
+  position: absolute;
+  top: 8px;
+  right: -2px;
+  bottom: 8px;
+  width: 5px;
+  overflow: hidden;
+  background: var(--ticket-background);
+}
+
+.dotted-line-separator .line {
+  display: block;
+  transform: rotate(90deg);
+}
+
+.dotted-line-separator .line::after {
+  position: relative;
+  left: 1px;
+  display: block;
+  height: 90%;
+  margin-block: 5px;
+  overflow: hidden;
+  color: rgb(204 204 204 / 50%);
+  content: "| | | | | | | | | | | | | | | | | | | | | | | | | | |";
+}
+
+/* Main ticket body */
+
+.event-body {
+  float: left;
+  width: 85%;
+  height: 100%;
+  padding-right: 10px;
+  overflow: hidden;
+  background: var(--ticket-background);
+  border-radius:
+    var(--ticket-inner-radius)
+    var(--ticket-radius)
+    var(--ticket-radius)
+    var(--ticket-inner-radius);
+  box-shadow: 0 2px 2px -1px var(--shadow-colour);
+}
+
+/* Ticket image */
+
+.event-image {
+  float: left;
+  width: calc(46% - 20px);
+  height: calc(100% - 20px);
+  margin: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.event-image .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ticket content */
+
+.event-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.event-title,
+.event-location,
+.event-details {
+  width: 100%;
+  padding: 10px;
+}
+
+.event-title,
+.event-location {
+  border-bottom: 1px solid var(--border-colour);
+}
+
+.event-title h3 {
+  margin: 0;
+}
+
+.event-title a {
+  color: inherit;
+}
+
+.event-title span {
+  color: var(--muted-text-colour);
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+
+.event-details {
+  padding-block-start: 10px;
+}
+
+/* Optional stub content */
+
+.event-date,
+.event-time {
+  position: absolute;
+  width: calc(100% - 20px);
+}
+
+.event-date {
+  top: 10px;
+  font-size: 1.2em;
+}
+
+.event-time {
+  bottom: 10px;
+}
+
+.to {
+  position: relative;
+  left: -25%;
+  display: block;
+}
+
+/* ==================================================
+   Individual event page
+================================================== */
+
+.event__image {
+  display: block;
+  width: 100%;
+  max-height: 35rem;
+  object-fit: cover;
+}
+
+.event__details div {
+  margin-block-end: 1rem;
+}
+
+.event__details dt {
+  font-weight: 700;
+}
+
+.event__details dd {
+  margin: 0;
+}
+
+/* ==================================================
+   Wider screens
+================================================== */
+
+@media (min-width: 35rem) {
+  :root {
+    --page-gutter: 1.5rem;
+  }
+
+  /*
+   The mobile ticket design is intentionally retained here.
+
+   Desktop-specific improvements can be added later without
+   affecting the mobile layout.
+  */
+}

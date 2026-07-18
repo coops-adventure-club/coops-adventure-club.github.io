@@ -1,0 +1,33 @@
+<article class="ticket">
+<div class='event'>
+  <div class='event-side' aria-hidden="true">
+    <div class='dotted-line-separator'><span class='line'></span></div>
+      <div class='cut-out'></div>
+    </div>
+    <div class='event-body'>
+      <div class='event-image'>
+        <img class='image' src="{{ event.data.image }}" alt="">
+      </div>
+      <div class="event-content">
+        <div class="event-title">
+          <h3>
+            <a href="{{ event.url }}">
+              {{ event.data.title }}
+            </a>
+          </h3>
+        </div>
+        <div class="event-details">
+          {% if event.data.location %}
+            {{ event.data.location }}
+          {% endif %}
+          <br>
+          <time datetime="{{ event.date | dateToISO }}">
+            {{ event.date | readableDate }}
+          </time>
+          {{ event.data.category }}
+        </div>	
+      </div>
+	  </div>
+
+
+</article>
