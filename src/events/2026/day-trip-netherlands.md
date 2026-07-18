@@ -1,5 +1,5 @@
 ---
-title: Day Trip: Netherlands
+title: 'Day Trip: Netherlands'
 date: 2026-03-03
 venue: Coach
 location: Amsterdam
