@@ -1,6 +1,6 @@
 ---
 title: European Le Mans Series
-date: 2026-09-14
+date: 2025-09-14
 venue: Silverstone Circuit
 location: Silverstone
 type: Sport
