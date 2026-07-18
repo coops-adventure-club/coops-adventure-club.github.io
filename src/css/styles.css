@@ -212,6 +212,8 @@ main {
 
 .event-title h3 {
   margin: 0;
+  /* line-height: 1.2;
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem); */
 }
 
 .event-title a {
@@ -226,6 +228,8 @@ main {
 
 .event-details {
   padding-block-start: 10px;
+  line-height: 1.2;
+  font-size: clamp(0.9rem, 1.8vw, 1.2rem);
 }
 
 /* Optional stub content */
