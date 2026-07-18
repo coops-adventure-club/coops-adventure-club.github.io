@@ -30,6 +30,8 @@ layout: layouts/base.njk
     </dl>
   </header>
 
+{% eventImage page.fileSlug, "hero" %}
+
   {% if image %}
     <img
       src="{{ image }}"

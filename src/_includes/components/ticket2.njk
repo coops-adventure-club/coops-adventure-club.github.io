@@ -5,9 +5,19 @@
       <div class='cut-out'></div>
     </div>
     <div class='event-body'>
-      <div class='event-image'>
-        <img class='image' src="{{ event.data.image }}" alt="">
-      </div>
+      {% set ticketImage = event.page.fileSlug | eventTicketImage %}
+
+      {% if ticketImage %}
+        <div class="event-image">
+          <img
+            src="{{ ticketImage }}"
+            alt=""
+            class="event-ticket-image"
+            loading="lazy"
+            decoding="async">
+        </div>
+      {% endif %}
+      
       <div class="event-content">
         <div class="event-title">
           <h3>
