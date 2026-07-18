@@ -12,3 +12,5 @@ Places visited:
 - Edam
 - Marken
 - Volendam
+
+It also included a boat trip through the canals of Amsterdam
