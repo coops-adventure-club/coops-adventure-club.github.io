@@ -190,6 +190,9 @@ img.event-ticket-image {
   object-fit: cover;
 }
 
+img.event-hero-image {
+  height: auto;
+}
 /* Ticket content */
 
 .event-content {

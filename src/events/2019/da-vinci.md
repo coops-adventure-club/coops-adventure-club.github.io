@@ -4,5 +4,4 @@ date: 2019-03-02
 venue: Sunderland Museum and Winter Gardens
 location: Sunderland
 type: Days out
-image: /images/events/xx.webp
 ---

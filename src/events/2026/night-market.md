@@ -4,7 +4,6 @@ date: 2026-06-25
 venue: STACK
 location: Seaburn
 type: Day Out
-image: /images/events/xx.webp
 ---
 
 Bought:

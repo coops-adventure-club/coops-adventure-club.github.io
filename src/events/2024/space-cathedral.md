@@ -4,5 +4,4 @@ date: 2024-10-10
 venue: Durham Cathedral
 location: Durham
 type: Days out
-image: /images/events/xx.webp
 ---

@@ -4,7 +4,6 @@ date: 2025-09-14
 venue: Silverstone Circuit
 location: Silverstone
 type: Sport
-image: /images/events/xx.webp
 ---
 
 Tickets included:
