@@ -1,6 +1,6 @@
 ---
 title: Night Market UK
-date: 2026-04-15
+date: 2026-06-25
 venue: STACK
 location: Seaburn
 type: Day Out
