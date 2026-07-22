@@ -18,8 +18,10 @@ title: Your memories
 
   <h2>{{ group.year }}</h2>
 
-  {% for event in group.events %}
-    {% include "components/ticket2.njk" %}
-  {% endfor %}
+  <div class="article-container">
+    {% for event in group.events %}
+      {% include "components/ticket2.njk" %}
+    {% endfor %}
+  </div>
 
 {% endfor %}

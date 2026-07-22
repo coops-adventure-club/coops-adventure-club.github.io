@@ -1,5 +1,5 @@
 :root {
-  --page-background: #eeeeee;
+  --page-background: #FDEDC3;
   --ticket-background: #ffffff;
   --text-colour: #24211d;
   --muted-text-colour: #888888;
@@ -298,4 +298,20 @@ img.event-hero-image {
    Desktop-specific improvements can be added later without
    affecting the mobile layout.
   */
+}
+
+@media (min-width: 48rem) { /* 768px */
+  .article-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+  article.ticket {
+    width: 48%;
+    display: inline-block;
+    margin-right: 5px;
+  }
 }
