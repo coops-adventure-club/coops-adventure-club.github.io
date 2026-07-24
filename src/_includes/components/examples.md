@@ -32,11 +32,11 @@ Events to add
 - XML
 
 <palette>
-  <color name="Dark Teal" hex="1a535c" r="26" g="83" b="92" />
-  <color name="Strong Cyan" hex="4ecdc4" r="78" g="205" b="196" />
-  <color name="Soft Peach" hex="fedc97" r="254" g="220" b="151" />
-  <color name="Grapefruit Pink" hex="ff6b6b" r="255" g="107" b="107" />
-  <color name="Royal Gold" hex="ffe66d" r="255" g="230" b="109" />
+  <color name="Dark Teal" hex="#1a535c" />
+  <color name="Strong Cyan" hex="#4ecdc4" />
+  <color name="Soft Peach" hex="#fedc97" />
+  <color name="Grapefruit Pink" hex="#ff6b6b" />
+  <color name="Royal Gold" hex="#ffe66d" />
 </palette>
 
 
@@ -64,11 +64,11 @@ f75590,fce4d8,fdedc3,b5f8fe,10ffcb
 - XML
 
 <palette>
-  <color name="Wild Strawberry" hex="f75590" r="247" g="85" b="144" />
-  <color name="Powder Petal" hex="fce4d8" r="252" g="228" b="216" />
-  <color name="Pearl Beige" hex="fdedc3" r="253" g="237" b="195" />
-  <color name="Icy Aqua" hex="b5f8fe" r="181" g="248" b="254" />
-  <color name="Tropical Mint" hex="10ffcb" r="16" g="255" b="203" />
+  <color name="Wild Strawberry" hex="#f75590" />
+  <color name="Powder Petal" hex="#fce4d8" />
+  <color name="Pearl Beige" hex="#fdedc3" />
+  <color name="Icy Aqua" hex="#b5f8fe" />
+  <color name="Tropical Mint" hex="#10ffcb" />
 </palette>
 
 <!-- Colour 3 -->
@@ -95,9 +95,9 @@ f75590,fce4d8,fdedc3,b5f8fe,10ffcb
 - XML
 
 <palette>
-  <color name="Sky Aqua" hex="56cbf9" r="86" g="203" b="249" />
-  <color name="Rose Kiss" hex="ff729f" r="255" g="114" b="159" />
-  <color name="Pearl Beige" hex="fdedc3" r="253" g="237" b="195" />
-  <color name="Shamrock" hex="32965d" r="50" g="150" b="93" />
-  <color name="Onyx" hex="0a100d" r="10" g="16" b="13" />
+  <color name="Sky Aqua" hex="#56cbf9" />
+  <color name="Rose Kiss" hex="#ff729f" />
+  <color name="Pearl Beige" hex="#fdedc3" />
+  <color name="Shamrock" hex="#32965d" />
+  <color name="Onyx" hex="#0a100d" />
 </palette>

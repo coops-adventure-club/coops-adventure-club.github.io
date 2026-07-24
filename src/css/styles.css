@@ -36,6 +36,58 @@ img {
   max-width: 100%;
 }
 
+#skip-link {
+  left: -9999px;
+  padding: 8px;
+  position: absolute;
+}
+
+#skip-link:focus {
+  display: block;
+  position: static;
+}
+
+#skip-link:active, #skip-link:focus {
+  left: 16px;
+  top: 16px;
+  z-index: 2;
+}
+
+#skip-link:focus {
+  background-color: #ffeb3b;
+  box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+  color: #212b32;
+  outline: 4px solid transparent;
+  text-decoration: none;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Header */
+.header-link {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.header-img {
+  max-width: 200px;
+  display: inline-block;
+}
+
 /* ==================================================
    Page layout
 ================================================== */
@@ -50,7 +102,7 @@ main {
 }
 
 .site-header {
-  padding-block: 2rem;
+  padding-block: 1rem;
 }
 
 .site-header > a {
@@ -314,4 +366,8 @@ img.event-hero-image {
     display: inline-block;
     margin-right: 5px;
   }
+}
+
+h2.event-year {
+  display:inline-block;
 }
