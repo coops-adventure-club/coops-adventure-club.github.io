@@ -1,5 +1,5 @@
 :root {
-  --page-background: #FDEDC3;
+  --page-background: #F5E6BF;
   --ticket-background: #ffffff;
   --text-colour: #24211d;
   --muted-text-colour: #888888;
@@ -29,7 +29,12 @@ body {
   color: var(--text-colour);
   font-family: "Josefin Sans", system-ui, sans-serif;
   line-height: 1.5;
+  background-color: #F5E6BF;
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
+
+
 
 img {
   display: block;
@@ -76,6 +81,10 @@ img {
 }
 
 /* Header */
+.site-header {
+  margin-bottom: 1rem;
+}
+
 .header-link {
     display: flex;
     align-items: center;
@@ -84,8 +93,53 @@ img {
     align-content: center;
 }
 .header-img {
-  max-width: 200px;
-  display: inline-block;
+  max-width: 250px;
+  display: block;
+  margin-inline: auto;
+  filter: drop-shadow(0 2px 2px rgb(0 0 0 / .08));
+  mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 90%,
+    transparent 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+.header-text {
+  font-size:2.5rem;
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+  margin-block: 0.25rem 0;
+}
+
+.header-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.55rem;
+  width: 13.75rem;
+  height: 0.38rem;
+  background:
+    linear-gradient(
+      177deg,
+      transparent 15%,
+      #c98b24 18% 72%,
+      transparent 76%
+    );
+  transform: translateX(-50%) rotate(-1deg);
+  opacity: 0.9;
 }
 
 /* ==================================================
@@ -174,6 +228,7 @@ main {
   width: 100%;
   height: 40%;
   background: var(--page-background);
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
   border-radius: 1000px;
   box-shadow: inset -1px 2px 2px -1px var(--shadow-colour);
 }
@@ -368,6 +423,17 @@ img.event-hero-image {
   }
 }
 
+/* Details */
+.wdc-details {
+  cursor: pointer;
+}
+
 h2.event-year {
   display:inline-block;
+  font-size: 2.25rem;
+  margin:0px;
+}
+
+.wdc-details summary {
+  margin-bottom: 5px;
 }
