@@ -4,6 +4,7 @@ import fs from "node:fs";
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/fonts");
 
   eleventyConfig.addFilter("readableDate", (date) => {
     return new Intl.DateTimeFormat("en-GB", {

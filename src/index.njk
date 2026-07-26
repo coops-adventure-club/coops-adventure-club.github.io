@@ -15,7 +15,19 @@ title: Your memories
 {% for group in collections.eventsByDate %}
   <details class="wdc-details" open>
     <summary>
-      <h2 class="event-year">{{ group.year }}</h2>
+      <div class="year-info">
+        <h2 class="event-year">{{ group.year }}</h2>
+        <span class="sr-only"> - </span>
+        <span class="event-count">
+          <img class="ticket-icon" src="/images/icons/ticket-ico.png" alt="">
+          {{ group.events | length }}
+          {% if group.events | length == 1 %}
+            adventure
+          {% else %}
+            adventures
+          {% endif %}
+        </span>
+      </div>
     </summary>
 
     <div class="article-container">

@@ -34,8 +34,6 @@ body {
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-
-
 img {
   display: block;
   max-width: 100%;
@@ -59,8 +57,8 @@ img {
 }
 
 #skip-link:focus {
-  background-color: #ffeb3b;
-  box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+  background-color: #FF99DF;
+  box-shadow: 0 -2px #FF99DF, 0 4px #212b32;
   color: #212b32;
   outline: 4px solid transparent;
   text-decoration: none;
@@ -83,6 +81,10 @@ img {
 /* Header */
 .site-header {
   margin-bottom: 1rem;
+  display: grid;
+  justify-items: center;
+  padding: 2.5rem 1.5rem 3.5rem;
+  text-align: center;
 }
 
 .header-link {
@@ -94,6 +96,7 @@ img {
 }
 .header-img {
   max-width: 250px;
+  margin-bottom: 10px;
   display: block;
   margin-inline: auto;
   filter: drop-shadow(0 2px 2px rgb(0 0 0 / .08));
@@ -113,15 +116,25 @@ img {
 }
 
 .header-link {
+  display: grid;
+  justify-items: center;
+  color: inherit;
   text-decoration: none;
+  padding: 0px 12px 12px 12px;
 }
 
 .header-text {
-  font-size:2.5rem;
+  /* font-size:2.5rem; */
+  font-family: "Newsreader", system-ui, sans-serif;
+  font-weight: 600;
   position: relative;
   width: fit-content;
   margin-inline: auto;
   margin-block: 0.25rem 0;
+  font-size: clamp(2.75rem, 7vw, 4.75rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
 }
 
 .header-text::after {
@@ -141,6 +154,13 @@ img {
   transform: translateX(-50%) rotate(-1deg);
   opacity: 0.9;
 }
+
+/* .site-logo {
+  width: clamp(8rem, 18vw, 12rem);
+  height: auto;
+  margin-bottom: 0.5rem;
+} */
+
 
 /* ==================================================
    Page layout
@@ -428,12 +448,97 @@ img.event-hero-image {
   cursor: pointer;
 }
 
+summary {
+  list-style: none;
+  font-size: 1.75rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: "▶";
+  display: inline-block;
+  transition: transform .2s ease;
+  margin-right: .5rem;
+  /* vertical-align: super; */
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
 h2.event-year {
   display:inline-block;
   font-size: 2.25rem;
   margin:0px;
 }
 
+.year-summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.event-year {
+  margin: 0;
+}
+
+.event-count {
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+
 .wdc-details summary {
   margin-bottom: 5px;
+}
+
+.year-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-count {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: .75;
+}
+
+.ticket-icon {
+  width: 25px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.year-info {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.event-year {
+  margin: 0;
+}
+
+.wdc-details summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wdc-details summary::before {
+  flex-shrink: 0;
 }
