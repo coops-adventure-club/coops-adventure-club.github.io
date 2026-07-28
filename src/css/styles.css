@@ -428,18 +428,16 @@ img.event-hero-image {
 }
 
 @media (min-width: 48rem) { /* 768px */
-  .article-container{
+  .article-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 1rem;
-    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
   }
   article.ticket {
     width: 48%;
     display: inline-block;
-    margin-right: 5px;
   }
 }
 
@@ -537,8 +535,65 @@ h2.event-year {
   gap: 0.75rem;
   width: 100%;
   box-sizing: border-box;
+  /* padding: 0.75rem 0.25rem; */
+  border-bottom: 2px solid rgb(201 139 36 / 45%);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+  margin-bottom: 10px;
 }
 
 .wdc-details summary::before {
   flex-shrink: 0;
+}
+
+/* New */
+.wdc-details summary:hover {
+  background-color: rgb(255 255 255 / 18%);
+  border-bottom-color: #c98b24;
+}
+
+.wdc-details summary:focus-visible {
+  outline: 3px solid #24211d;
+  outline-offset: 4px;
+}
+
+.event-count {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: auto;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.wdc-details summary:hover .event-count {
+  opacity: 1;
+}
+
+details summary::before {
+  content: "▶";
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: 0.25rem;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.wdc-details summary:hover::before {
+  color: #c98b24;
+}
+
+.wdc-details {
+  position: relative;
+  /* margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem; */
 }
