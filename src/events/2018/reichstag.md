@@ -6,4 +6,8 @@ location: Berlin
 type: Days out
 ---
 
+## Notes
+
 Included a visit to the roof terrace and sky dome.
+
+We nearly missed it because we forgot our passports.

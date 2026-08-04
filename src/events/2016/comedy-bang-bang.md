@@ -5,3 +5,10 @@ venue: Hyde Park Picture House
 location: Leeds
 type: Comedy
 ---
+
+## Included
+
+- Scott Auckerman
+- Paul F. Tompkins
+- Mike Hanford
+- Jon Garbus

@@ -6,4 +6,6 @@ location: Gateshead
 type: Music
 ---
 
+## Notes
+
 Music by Royal Northern Sinfonia

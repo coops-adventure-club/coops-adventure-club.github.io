@@ -6,6 +6,8 @@ location: Amsterdam
 type: Day Out
 ---
 
+## Notes 
+
 Included:
 - Photo booth
 - Virtual reality ride

@@ -6,6 +6,6 @@ location: Kieldet Forest
 type: Days out
 ---
 
-##Notes
+## Notes
 
 With Ian and Chloe

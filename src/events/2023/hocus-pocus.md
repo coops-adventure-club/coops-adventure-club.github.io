@@ -6,4 +6,6 @@ location: Gateshead
 type: Music
 ---
 
+## Notes
+
 Hocus Pocus in concert with Royal Northern Sinfonia

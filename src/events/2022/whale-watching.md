@@ -6,4 +6,6 @@ location: Reykjavik
 type: Days out
 ---
 
+## Notes
+
 We saw a minke whale!

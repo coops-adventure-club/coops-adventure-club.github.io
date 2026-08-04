@@ -6,4 +6,6 @@ location: Reykjavik
 type: Days out
 ---
 
+## Notes
+
 We didn't see any Northern Lights, but it was good!

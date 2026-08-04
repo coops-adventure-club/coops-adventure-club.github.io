@@ -6,7 +6,7 @@ location: Seaburn
 type: Day Out
 ---
 
-Bought:
+## Bought
 - Carlos Sainz bag
 - Carlos Sainz hair clip
 - Kimchi Fried 

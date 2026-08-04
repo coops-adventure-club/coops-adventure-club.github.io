@@ -6,4 +6,11 @@ location: Leeds
 type: Comedy
 ---
 
-The Ground Beefing tour
+## The Ground Beefing tour
+
+The show included:
+- Scott Auckerman
+- Andy Daly (Hot Dog & Neptuna)
+- Paul F. Tompkins (Mayor Junius Bobbledoonary & Obi Ron Kenob)
+
+

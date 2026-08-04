@@ -6,7 +6,7 @@ location: Amsterdam
 type: Day Out
 ---
 
-Places visited:
+## Places visited
 - Zaans Schans
 - Edam
 - Marken
