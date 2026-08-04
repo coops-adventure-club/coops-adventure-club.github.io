@@ -116,7 +116,7 @@ eleventyConfig.addAsyncShortcode(
     return Image.generateHTML(metadata, {
       alt: "",
       sizes: variant === "hero"
-        ? "(min-width: 55rem) 55rem, 100vw"
+        ? "(min-width: 55rem) 55rem, calc(100vw - 2rem)"
         : "400px",
       loading: variant === "hero" ? "eager" : "lazy",
       decoding: "async",

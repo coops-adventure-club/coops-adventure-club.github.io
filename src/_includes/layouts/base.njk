@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body {% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
     <a id="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <a class="header-link" href="/">

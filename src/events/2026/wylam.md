@@ -6,25 +6,27 @@ location: Newcastle
 type: Day out
 ---
 
-## Our menu
+## What we ate
 
 ### Mark Donald
-Highland Wagyu cheeseburger spring roll with Big Mark sauce
+Highland Wagyu cheeseburger spring roll with Big Mark sauce.
 
 ### Paul Buralieres
-Kohlrabi Pastrami, spiced buttermilk, Wigmore cheese, loveage and celeriac bun
+Kohlrabi Pastrami, spiced buttermilk, Wigmore cheese, loveage and celeriac bun.
 
 ### Cal Byerley
-'Alien' Egg - White chocolate and green chocolate with coco butter, feuilletine, salted pistachio cream, sour cherry mouse, pistachio frangipane, dried sour cherries and caramlised pistachio 
+'Alien' Egg - White chocolate and green chocolate with coco butter, feuilletine, salted pistachio cream, sour cherry mouse, pistachio frangipane, dried sour cherries and caramlised pistachio. 
 
 ### James Knappett
-Roasted cauliflower, peanuts, roasted mango, coriander & Kitchen Table homemade curry powder
+Roasted cauliflower, peanuts, roasted mango, coriander & Kitchen Table homemade curry powder.
 
 ### Lisa Goodwin-Allen
-Corn Fed Chicken Toast, Green Chilli and Coriander
+Corn Fed Chicken Toast, Green Chilli and Coriander.
 
 ### Stuart Ralston 
 Lobster and prawn katsu sanwich with chippy sauce and Kewpie mayo.
+
+--- 
 
 ## Notes
 Afterwards we visited the New Greek Bakery in West Jesmond: 

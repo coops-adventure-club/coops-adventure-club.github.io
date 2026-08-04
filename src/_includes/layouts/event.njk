@@ -1,27 +1,28 @@
 ---
 layout: layouts/base.njk
+bodyClass: event-view
 ---
 
-<article class="event">
-  {% eventImage page.fileSlug, "hero" %}
-
-  {% if image %}
-    <img
-      src="{{ image }}"
-      alt=""
-      class="event__image"
-    >
-  {% endif %}
-  
-  <p>
-    <a href="/">← Back to all events</a>
+<article class="event-page">
+  <p class="event-page__back">
+    <a href="/">Back to all events</a>
   </p>
 
+  <div class="event-page__hero">
+    {% eventImage page.fileSlug, "hero" %} 
+  </div>
   
-  <p class="event__category">{{ type }}</p>
+  <div class="event-page__summary">
+  {% if type %}
+    <p class="event-page__category">
+      <span class="sr-only">Event type: </span>
+      {{ type }}
+    </p>
+  {% endif %}
+
   <h1>{{ title }}</h1>
 
-  <dl class="event__details">
+  <dl class="event-page__details">
     <div>
       <dt>Date</dt>
       <dd>
@@ -38,8 +39,9 @@ layout: layouts/base.njk
       </div>
     {% endif %}
   </dl>
+</div>
 
-   <div class="event__notes">
+  <div class="event-page__notes">
     {{ content | safe }}
-    </div>
+  </div>
 </article>
