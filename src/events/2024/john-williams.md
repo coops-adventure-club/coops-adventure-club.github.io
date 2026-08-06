@@ -7,6 +7,5 @@ type: Music
 ---
 
 ## Show notes
-
 - Performers: Royal Northern Sinfonia
 - Conductor: Stephen Bell
