@@ -3,7 +3,7 @@ title: F1 British GP
 date: 2024-07-07
 venue: Silverstone
 location: Silverstone
-type: Theatre
+type: Sport
 ---
  
 ## Summary
