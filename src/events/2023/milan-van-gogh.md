@@ -1,7 +1,7 @@
 ---
-title: 'Duomo Rooftop Tour'
+title: 'Vincent van Gogh: Pittore Colto'
 date: 2023-10-13
-venue: Duomo di Milano
+venue: Mudec
 location: Milan
 type: Days Out
 ---

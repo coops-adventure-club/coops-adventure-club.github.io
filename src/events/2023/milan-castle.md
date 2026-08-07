@@ -1,7 +1,7 @@
 ---
-title: 'Duomo Rooftop Tour'
+title: 'Sforzesco Castle'
 date: 2023-10-13
-venue: Duomo di Milano
+venue: Castello Sforzesco
 location: Milan
 type: Days Out
 ---
