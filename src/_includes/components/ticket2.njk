@@ -1,44 +1,44 @@
-<article class="ticket">
-<div class='event'>
-  <div class='event-side' aria-hidden="true">
-    <div class='dotted-line-separator'>
-      <span class='line'></span>
+<article class="ticket" id="event-{{ event.page.fileSlug }}">
+  <div class='event'>
+    <div class='event-side' aria-hidden="true">
+      <div class='dotted-line-separator'>
+        <span class='line'></span>
+      </div>
+      <div class='cut-out'></div>
     </div>
-    <div class='cut-out'></div>
-  </div>
-  <div class='event-body'>
-    {% set ticketImage = event.page.fileSlug | eventTicketImage %}
+    <div class='event-body'>
+      {% set ticketImage = event.page.fileSlug | eventTicketImage %}
 
-    {% if ticketImage %}
-      <div class="event-image">
-        <img
-          src="{{ ticketImage }}"
-          alt=""
-          class="event-ticket-image"
-          loading="lazy"
-          decoding="async">
+      {% if ticketImage %}
+        <div class="event-image">
+          <img
+            src="{{ ticketImage }}"
+            alt=""
+            class="event-ticket-image"
+            loading="lazy"
+            decoding="async">
+        </div>
+      {% endif %}
+      
+      <div class="event-content">
+        <div class="event-title">
+          <h3>
+            <a href="{{ event.url }}">
+              {{ event.data.title }}
+            </a>
+          </h3>
+        </div>
+        <div class="event-details">
+          {% if event.data.location %}
+            {{ event.data.location }}
+          {% endif %}
+          <br>
+          <time datetime="{{ event.date | dateToISO }}">
+            {{ event.date | readableDate }}
+          </time>
+          {{ event.data.category }}
+        </div>	
       </div>
-    {% endif %}
-    
-    <div class="event-content">
-      <div class="event-title">
-        <h3>
-          <a href="{{ event.url }}">
-            {{ event.data.title }}
-          </a>
-        </h3>
-      </div>
-      <div class="event-details">
-        {% if event.data.location %}
-          {{ event.data.location }}
-        {% endif %}
-        <br>
-        <time datetime="{{ event.date | dateToISO }}">
-          {{ event.date | readableDate }}
-        </time>
-        {{ event.data.category }}
-      </div>	
     </div>
   </div>
-</div>
 </article>
