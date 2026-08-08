@@ -3,7 +3,7 @@ title: Northern Lights Tour
 date: 2022-04-02
 venue: Reykjavic excursions
 location: Reykjavik
-type: Days out
+type: Day out
 ---
 
 ## Notes

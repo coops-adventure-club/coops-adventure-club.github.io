@@ -2,7 +2,7 @@
 title: 'Trike-Harley Tour'
 date: 2024-11-20
 location: Prague
-type: Days out
+type: Day out
 ---
 
 ## Viewpoints

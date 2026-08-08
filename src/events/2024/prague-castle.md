@@ -3,7 +3,7 @@ title: 'Prague Castle'
 date: 2024-11-22
 venue: Prague Castle
 location: Prague
-type: Days out
+type: Day out
 ---
 
 ## Notes

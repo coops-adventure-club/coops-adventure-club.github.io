@@ -3,7 +3,7 @@ title: Leeds vs Fulham
 date: 2026-01-17
 venue: Elland Road
 location: Leeds
-type: Day Out
+type: Sport
 ---
 
 ## Notes

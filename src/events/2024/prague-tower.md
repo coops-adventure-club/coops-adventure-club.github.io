@@ -3,7 +3,7 @@ title: 'Petřín Tower'
 date: 2024-11-21
 venue: 'Petřín Tower'
 location: Prague
-type: Days out
+type: Day out
 ---
 
 ## Notes
