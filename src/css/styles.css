@@ -248,13 +248,13 @@ main {
   -webkit-mask-image:
     radial-gradient(
       circle 10px at 0 50%,
-      transparent 0 9px,
+      transparent 0 15px,
       black 10px
     );
   mask-image:
     radial-gradient(
       circle 10px at 0 50%,
-      transparent 0 9px,
+      transparent 0 15px,
       black 10px
     );
 }
