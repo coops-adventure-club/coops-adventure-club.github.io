@@ -230,119 +230,71 @@ main {
   width: 100%;
   height: var(--ticket-height);
   margin-bottom: 2.5rem ;
-}
-
-/* Left-hand ticket stub */
-
-.event-side {
-  position: relative;
-  z-index: 1;
-  float: left;
-  width: calc(15% - 1px);
-  height: 100%;
-  padding: 10px;
-  overflow: hidden;
-  background: var(--ticket-background);
-  border-radius:
-    var(--ticket-radius)
-    var(--ticket-inner-radius)
-    var(--ticket-inner-radius)
-    var(--ticket-radius);
-  box-shadow: 1px 2px 2px -1px var(--shadow-colour);
-  font-size: 0.8em;
-  text-align: right;
-}
-
-/* Decorative cut-out */
-
-.cut-out {
-  position: absolute;
-  top: 25%;
-  left: -60%;
-  display: block;
-  width: 100%;
-  height: 40%;
-  background: var(--page-background);
-  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
-  border-radius: 1000px;
-  box-shadow: inset -1px 2px 2px -1px var(--shadow-colour);
-}
-
-/* Perforated separator */
-
-.dotted-line-separator {
-  position: absolute;
-  top: 8px;
-  right: -2px;
-  bottom: 8px;
-  width: 5px;
-  overflow: hidden;
-  background: var(--ticket-background);
-}
-
-.dotted-line-separator .line {
-  display: block;
-  transform: rotate(90deg);
-}
-
-.dotted-line-separator .line::after {
-  position: relative;
-  left: 1px;
-  display: block;
-  height: 90%;
-  margin-block: 5px;
-  overflow: hidden;
-  color: rgb(204 204 204 / 50%);
-  content: "| | | | | | | | | | | | | | | | | | | | | | | | | | |";
+  border-radius: 8px;
+ 
 }
 
 /* Main ticket body */
 
 .event-body {
-  float: left;
-  width: 85%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  width: 100%;
   height: 100%;
-  padding-right: 10px;
   overflow: hidden;
   background: var(--ticket-background);
-  border-radius:
-    var(--ticket-inner-radius)
-    var(--ticket-radius)
-    var(--ticket-radius)
-    var(--ticket-inner-radius);
-  box-shadow: 0 2px 2px -1px var(--shadow-colour);
+  border-radius: 8px;
+  -webkit-mask-image:
+    radial-gradient(
+      circle 10px at 0 50%,
+      transparent 0 9px,
+      black 10px
+    );
+  mask-image:
+    radial-gradient(
+      circle 10px at 0 50%,
+      transparent 0 9px,
+      black 10px
+    );
+}
+
+.event-shadow {
+  height: 100%;
+  border-radius: 8px;
+  filter:
+    drop-shadow(0 2px 2px rgb(36 33 29 / 10%))
+    drop-shadow(0 5px 8px rgb(36 33 29 / 7%));
 }
 
 /* Ticket image */
 
 .event-image {
-  float: left;
-  width: calc(46% - 20px);
-  height: calc(100% - 20px);
-  margin: 10px;
+  position: relative;
+  min-width: 0;
+  height: 100%;
   overflow: hidden;
-  text-align: center;
-  display: flex;
 }
 
-img.event-ticket-image {
-  /* flex-shrink: 0; */
-  min-width: 100%;
-  min-height: 100%;
+.event-ticket-image {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 img.event-hero-image {
   height: auto;
 }
-/* Ticket content */
 
+/* Ticket content */
 .event-content {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
   height: 100%;
+  min-width: 0;
 }
 
 .event-title,
