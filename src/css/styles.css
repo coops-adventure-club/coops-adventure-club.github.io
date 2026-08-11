@@ -333,37 +333,37 @@ img.event-hero-image {
 }
 
 /* hover styles */
+
 .event {
   transition: transform .18s ease;
-}
-
-.event-body {
-  transition: filter .18s ease;
 }
 
 .event-image img {
   transition: transform .25s ease;
 }
 
-.event:hover .event-ticket-image {
-  transform: scale(1.08);
-}
-
+/* Desktop / mouse hover only */
 @media (hover: hover) and (pointer: fine) {
-  .event:hover .event-shadow {
+  .event:not(:focus-within):hover .event-shadow {
     transform: translateY(-4px);
+  }
+
+  .event:not(:focus-within):hover .event-ticket-image {
+    transform: scale(1.08);
   }
 }
 
+/* Touch press */
 @media (hover: none) and (pointer: coarse) {
   .event:active .event-shadow {
     transform: scale(0.99);
   }
 }
-/* end */
 
-/* focus styles */
+/* Keyboard focus */
+
 .event:focus-within {
+  transform: translateY(-4px);
   outline: 3px solid #AD771F;
   outline-offset: 4px;
   border-radius: 10px;
@@ -373,12 +373,7 @@ img.event-hero-image {
   outline: none;
 }
 
-.event:focus-within {
-  transform: translateY(-4px);
-  outline: 3px solid #AD771F;
-  outline-offset: 4px;
-  border-radius: 10px;
-}
+
 /* Optional stub content */
 
 .event-date,
