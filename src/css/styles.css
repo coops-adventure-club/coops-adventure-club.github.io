@@ -266,9 +266,6 @@ main {
   transition: transform 0.18s ease;
 }
 
-.event:hover .event-shadow {
-  transform: translateY(-4px);
-}
 
 /* Ticket image */
 
@@ -355,6 +352,11 @@ img.event-hero-image {
   transform: scale(1.08);
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .event:hover .event-shadow {
+    transform: translateY(-4px);
+  }
+}
 /* end */
 
 /* focus styles */
