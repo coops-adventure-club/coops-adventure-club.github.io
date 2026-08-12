@@ -262,7 +262,7 @@ main {
 .event-shadow {
   height: 100%;
   border-radius: 8px;
-  filter: drop-shadow(0 6px 8px rgb(36 33 29 / 16%));
+  filter: drop-shadow(0 2px 3px rgb(36 33 29 / 12%));
   transition: transform 0.18s ease;
 }
 
