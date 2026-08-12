@@ -262,11 +262,6 @@ main {
 .event-shadow {
   height: 100%;
   border-radius: 8px;
-  filter: drop-shadow(0 2px 3px rgb(36 33 29 / 12%));
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  will-change: transform;
-  transition: transform 0.18s ease;
 }
 
 
